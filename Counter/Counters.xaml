@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Counter"
+             x:Class="Counter.Counters">
+    <StackLayout Padding="20">
+        <Label Text="Enter Counter Name:" />
+        <Entry x:Name="CounterNameEntry" />
+        <Label Text="Enter Base Counter Value:" />
+        <Entry x:Name="BaseCounterValueEntry" Keyboard="Numeric" />
+        <Label Text="Enter Counters COlor"/>
+        <Entry x:Name="CounterColorEntry" />
+        <Button Text="Add" Clicked="OnAddCounter" />
+        <StackLayout x:Name="CountersLayout" />
+    </StackLayout>
+</ContentPage>

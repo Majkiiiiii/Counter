@@ -1,0 +1,14 @@
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Counter.Counter">
+    <Frame Padding="10" Margin="10" HasShadow="True" CornerRadius="10">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="10">
+            <Label x:Name="CounterNameLabel" VerticalOptions="Center" HorizontalOptions="StartAndExpand" FontSize="Medium" TextColor="{Binding Color}"/>
+            <Button Text="-" Clicked="OnDecreaseCounter" WidthRequest="50" />
+            <Label x:Name="CounterValueLabel" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium" TextColor="{Binding Color}" />
+            <Button Text="+" Clicked="OnIncreaseCounter" WidthRequest="50" />
+            <Button Text="Reset" Clicked="OnResetCounter" WidthRequest="50" />
+            <Button Text="Delete" Clicked="OnDeleteCounter" WidthRequest="50" />
+        </StackLayout>
+    </Frame>
+</ContentView>
